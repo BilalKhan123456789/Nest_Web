@@ -1,0 +1,59 @@
+#top_div{
+    font-family: 'Lato', sans-serif;
+}
+
+#browse_deals{
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-trigger {
+   
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    width: 95px;
+    opacity: 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out; 
+  }
+  
+  .dropdown-content.open {
+    opacity: 1;
+  }
+  
+  .dropdown-content p {
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .dropdown-container:hover .dropdown-content {
+    display: block;
+  }
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+
+  
